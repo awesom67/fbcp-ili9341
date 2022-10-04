@@ -11,7 +11,7 @@ BLK -> BCM 27
 ```
 #### Compiling
 ```
-cmake -DST7789VW=ON -DGPIO_TFT_DATA_CONTROL=24 -DGPIO_TFT_RESET_PIN=25 -DGPIO_TFT_BACKLIGHT=27 -DSTATISTICS=0 -DSPI_BUS_CLOCK_DIVISOR=8 -DUSE_DMA_TRANSFERS=OFF .. && make -j
+mkdir build && cd build && cmake -DST7789VW=ON -DGPIO_TFT_DATA_CONTROL=24 -DGPIO_TFT_RESET_PIN=25 -DGPIO_TFT_BACKLIGHT=27 -DSTATISTICS=0 -DSPI_BUS_CLOCK_DIVISOR=8 -DUSE_DMA_TRANSFERS=OFF .. && make -j
 ```
 #### Configuring
 Go to `/boot/config.txt` and add/change these:
@@ -21,7 +21,7 @@ hdmi_mode=87
 hdmi_cvt=240 240 60 1 0 0 0
 hdmi_force_hotplug=1
 ```
-#### Launching the display driver at startup
+#### Launching the driver at startup
 To set up the driver to launch at startup, edit the file /etc/rc.local in sudo mode, and add a line:
 
 ```
