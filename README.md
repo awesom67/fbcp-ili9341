@@ -22,7 +22,7 @@ hdmi_cvt=240 240 60 1 0 0 0
 hdmi_force_hotplug=1
 ```
 #### Launching the driver at startup
-To set up the driver to launch at startup, edit the file /etc/rc.local in sudo mode, and add a line:
+To set up the driver to launch at startup, edit the file `/etc/rc.local` in sudo mode, and add a line:
 
 ```
 sudo /path/to/fbcp-ili9341/build/fbcp-ili9341 &
