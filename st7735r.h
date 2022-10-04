@@ -13,6 +13,7 @@
 // Data specific to the ILI9341 controller
 #define DISPLAY_SET_CURSOR_X 0x2A
 #define DISPLAY_SET_CURSOR_Y 0x2B
+#define DISPLAY_SPI_DRIVE_SETTINGS (1 | BCM2835_SPI0_CS_CPOL | BCM2835_SPI0_CS_CPHA)
 #define DISPLAY_WRITE_PIXELS 0x2C
 
 #if defined(ST7789) || defined(ST7789VW)
