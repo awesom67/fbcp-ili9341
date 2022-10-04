@@ -1,4 +1,5 @@
 ## kind of a guide for using 240x240 ST7789 SPI display on RPi zero
+*Note:* If you get an error when you try to run the driver, try disabling the GL driver using `raspi-config`.
 #### Wiring
 ```
 GND -> Ground
